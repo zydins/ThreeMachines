@@ -1,0 +1,121 @@
+.root {
+    -fx-background-image: url("images/background.jpg");
+}
+
+.ttip{
+    -fx-background-radius: 0 0 0 0;
+    -fx-background-color:  linear-gradient(white, gray )
+}
+
+.page-corner {
+    -fx-shape: " ";
+}
+
+.topbox {
+    -fx-background-color: linear-gradient(#575757, #393939);
+}
+
+.bottombox {
+    -fx-background-color: linear-gradient(#444444, #343434);
+}
+
+.textfield {
+    -fx-background-color: linear-gradient(#444444, #343434);
+    -fx-text-fill: WHITE;
+}
+
+.infoTextField {
+    -fx-background-image: url("images/background.jpg");
+    -fx-text-fill: WHITE;
+    -fx-background-insets: 0;
+}
+
+#messagelabel {
+    -fx-stroke: white;
+    -fx-stroke-width: 1;
+}
+
+#close {
+     -fx-background-radius: 10;
+     -fx-text-fill: #aaaaaa;
+     -fx-background-insets: 0;
+     -fx-background-color:
+        linear-gradient(#5c5c5c, #454545),
+        radial-gradient(center 50% -40%, radius 200%, #727272 45%, #626262 50%);
+}
+#close:hover {
+    -fx-background-color:
+        linear-gradient(#8c8c8c, #767676),
+        radial-gradient(center 50% -40%, radius 200%, #828282 45%, #747474 50%);
+}
+
+#add {
+    -fx-background-radius: 10;
+    -fx-pref-height: 20;
+    -fx-pref-width: 20;
+    -fx-background-size: 20, 20;
+    -fx-graphic: url("images/Add-icon.png");
+    -fx-background-insets: 0;
+    -fx-background-color:
+        linear-gradient(#5c5c5c, #454545);
+}
+
+#add:hover {
+    -fx-background-color:
+        linear-gradient(#6d6d6d, #5b5b5b);
+}
+
+#back {
+    -fx-graphic: url("images/back.png");
+    -fx-background-insets: 0;
+    -fx-background-color:
+        linear-gradient(#5c5c5c, #454545);
+}
+
+#back:hover {
+    -fx-background-color:
+        linear-gradient(#6d6d6d, #5b5b5b);
+}
+
+#forward {
+    -fx-graphic: url("images/forward.png");
+    -fx-background-insets: 0;
+    -fx-background-color:
+        linear-gradient(#5c5c5c, #454545);
+}
+
+#forward:hover {
+    -fx-background-color:
+        linear-gradient(#6d6d6d, #5b5b5b);
+}
+
+#backmain {
+    -fx-graphic: url("images/back.png");
+    -fx-background-insets: 0;
+    -fx-background-color:
+        linear-gradient(#575757, #393939);
+}
+
+#backmain:hover {
+    -fx-background-color:
+        linear-gradient(#6d6d6d, #5b5b5b);
+}
+
+#forwardmain {
+    -fx-graphic: url("images/forward.png");
+    -fx-background-insets: 0;
+    -fx-background-color:
+        linear-gradient(#575757, #393939);
+}
+
+#forwardmain:hover {
+    -fx-background-color:
+        linear-gradient(#6d6d6d, #5b5b5b);
+}
+
+#title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}

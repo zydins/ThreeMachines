@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<?import java.net.URL?>
+<?import javafx.scene.text.Text?>
+<GridPane fx:id="gridpane" fx:controller="com.zudin.threemachine.gui.InfoController" prefHeight="190.0" prefWidth="450.0"
+            xmlns:fx="http://javafx.com/fxml" styleClass="root" vgap="5">
+    <TextArea fx:id="textarea" editable="false" focusTraversable="true" wrapText="true"
+              prefHeight="3000.0" prefWidth="6000.0" styleClass="infoTextField"/>
+    <stylesheets>
+        <URL value="@../style.css" />
+    </stylesheets>
+</GridPane>

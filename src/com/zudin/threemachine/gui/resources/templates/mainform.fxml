@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<?import java.net.URL?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<BorderPane fx:controller="com.zudin.threemachine.gui.MainController" prefHeight="400.0" prefWidth="650.0"
+            xmlns:fx="http://javafx.com/fxml" styleClass="root">
+    <top>
+        <HBox BorderPane.alignment="TOP_LEFT" spacing="5" styleClass="topbox">
+        <children>
+        <MenuBar BorderPane.alignment="TOP_LEFT" blendMode="SRC_OVER" cache="true"
+                 cacheHint="DEFAULT" layoutX="0.0" layoutY="0.0"
+                 opacity="1.0" prefHeight="26.0" prefWidth="600.0" useSystemMenuBar="false"
+                 AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+                styleClass="topbox">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Save" onAction="#handleSave">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" text="Open" onAction="#handleLoad">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" text="Exit" onAction="#handleExit">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="Q" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Actions">
+                    <items>
+                        <MenuItem  mnemonicParsing="false" text="Undo" onAction="#handleUndo">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="Z" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem  mnemonicParsing="false" text="Redo" onAction="#handleRedo">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="Y" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem  mnemonicParsing="false" text="Details manager" onAction="#handleManager">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="D" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" text="Clear" onAction="#handleClear">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="E" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" text="Show full info" onAction="#handleFullInfo">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="F" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem fx:id="animationMark" mnemonicParsing="false" text="Disable animation" onAction="#handleAnimationMark"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Instructions" onAction="#handleInstructions"/>
+                        <MenuItem mnemonicParsing="false" text="About" onAction="#handleAbout"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+            <StackPane fx:id="stackPaneUndo" HBox.hgrow="ALWAYS">
+                <children>
+                    <Button fx:id="undoButton" mnemonicParsing="false" onAction="#handleUndo" id="backmain"/>
+                </children>
+            </StackPane>
+            <StackPane fx:id="stackPaneRedo">
+                <children>
+                    <Button fx:id="redoButton" mnemonicParsing="false" onAction="#handleRedo" id="forwardmain"/>
+                </children>
+            </StackPane>
+        </children>
+        </HBox>
+    </top>
+    <center>
+        <GridPane fx:id="grid" BorderPane.alignment="CENTER_LEFT" layoutX="0.0" layoutY="99.0"
+                  prefHeight="186.0" prefWidth="600.0"/>
+    </center>
+    <bottom>
+        <HBox fx:id="hbox" BorderPane.alignment="TOP_LEFT" spacing="10" styleClass="bottombox" prefHeight="30">
+            <children>
+                <TextField fx:id="resultField" editable="false" prefWidth="1000.0" styleClass="textfield"/>
+                <StackPane fx:id="stackBottomProgress1" HBox.hgrow="ALWAYS"/>
+                <StackPane fx:id="stackBottomProgress2">
+                    <children>
+                        <ProgressIndicator fx:id="progressIndicator" progress="-1.0" />
+                    </children>
+                </StackPane>
+            </children>
+        </HBox>
+    </bottom>
+    <stylesheets>
+        <URL value="@../style.css" />
+    </stylesheets>
+</BorderPane>

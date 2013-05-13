@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<GridPane fx:controller="com.zudin.threemachine.gui.MessageController" alignment="center"
+                     hgap="10" vgap="30" xmlns:fx="http://javafx.com/fxml" styleClass="root" >
+<padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
+<Label fx:id="text" GridPane.halignment="CENTER"  text="" textFill="WHITE"
+       GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+<Button GridPane.halignment="CENTER" mnemonicParsing="false" text="OK" onAction="#handleOk"
+        GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+<stylesheets>
+    <URL value="@../style.css" />
+</stylesheets>
+</GridPane>

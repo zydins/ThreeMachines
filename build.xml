@@ -1,0 +1,18 @@
+<project name="ThreeMachines" basedir="." default="dist"
+         xmlns:fx="javafx:com.sun.javafx.tools.ant">
+
+    <target name="init">
+        <tstamp/>
+        <taskdef resource="com/sun/javafx/tools/ant/antlib.xml"
+                 uri="javafx:com.sun.javafx.tools.ant"
+                 classpath="C:\Program Files\Java\jdk1.7.0_21\lib\ant-javafx.jar"/>
+    </target>
+
+    <target name="dist" depends="init">
+        <fx:jar destfile="threemachines.jar">
+            <fx:application name="ThreeMachines" mainclass="com.zudin.threemachine.gui.Main"/>
+            <fileset dir="out/production/CourseWork"/>
+        </fx:jar>
+    </target>
+
+</project>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<?import java.net.URL?>
+<?import javafx.scene.text.Text?>
+<GridPane fx:id="gridpane" fx:controller="com.zudin.threemachine.gui.AboutController" prefHeight="200.0" prefWidth="300.0"
+            xmlns:fx="http://javafx.com/fxml" styleClass="root" vgap="5">
+    <Text text="Three machines algorithm" fill="WHITE"
+          GridPane.columnIndex="0" GridPane.rowIndex="0"
+            id="title"/>
+    <Text text="Three machines algorithm realisation on JavaFX" fill="WHITE"
+           GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Text text="This program is the coursework for my SE course" fill="WHITE"
+            GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <Text text="in Higher School of Economics, Russia. For any" fill="WHITE"
+          GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <Text text="help or contact, please send an email to" fill="WHITE"
+          GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <Text text="zydins@gmail.com " fill="#3e8abf"
+          GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <Text text=" "
+          GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+    <Text text="Higher School of Economics © 2013" fill="WHITE"
+          GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+    <stylesheets>
+        <URL value="@../style.css" />
+    </stylesheets>
+</GridPane>

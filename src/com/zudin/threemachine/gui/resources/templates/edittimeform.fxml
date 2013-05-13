@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<?import java.net.URL?>
+<?import javafx.scene.text.Text?>
+<GridPane fx:id="gridpane" fx:controller="com.zudin.threemachine.gui.EditTimeController" prefHeight="55.0" prefWidth="45.0"
+            xmlns:fx="http://javafx.com/fxml" styleClass="root" vgap="5">
+    <TextField fx:id="resultField" prefWidth="40" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <Button text="OK" prefWidth="40" GridPane.halignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="1"
+            onAction="#handleOK" />
+    <stylesheets>
+        <URL value="@../style.css" />
+    </stylesheets>
+</GridPane>
